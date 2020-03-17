@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"mpu-9255\startup_stm32f407xx.o"
+"mpu-9255\mpu9255.o"
+"mpu-9255\main.o"
+"mpu-9255\stm32f4xx_it.o"
+"mpu-9255\stm32f4xx_hal_msp.o"
+"mpu-9255\imu.o"
+"mpu-9255\stm32f4xx_hal_i2c.o"
+"mpu-9255\stm32f4xx_hal_i2c_ex.o"
+"mpu-9255\stm32f4xx_hal_tim.o"
+"mpu-9255\stm32f4xx_hal_tim_ex.o"
+"mpu-9255\stm32f4xx_hal_rcc.o"
+"mpu-9255\stm32f4xx_hal_rcc_ex.o"
+"mpu-9255\stm32f4xx_hal_flash.o"
+"mpu-9255\stm32f4xx_hal_flash_ex.o"
+"mpu-9255\stm32f4xx_hal_flash_ramfunc.o"
+"mpu-9255\stm32f4xx_hal_gpio.o"
+"mpu-9255\stm32f4xx_hal_dma_ex.o"
+"mpu-9255\stm32f4xx_hal_dma.o"
+"mpu-9255\stm32f4xx_hal_pwr.o"
+"mpu-9255\stm32f4xx_hal_pwr_ex.o"
+"mpu-9255\stm32f4xx_hal_cortex.o"
+"mpu-9255\stm32f4xx_hal.o"
+"mpu-9255\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "MPU-9255\MPU-9255.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MPU-9255.map" -o MPU-9255\MPU-9255.axf
